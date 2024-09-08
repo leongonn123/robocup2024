@@ -1,0 +1,10 @@
+<launch>
+  <!-- Static Transform for LIDAR -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_footprint_to_base_link"
+        args="0 0 0 0 0 0 base_footprint base_link" />
+      <!-- Static Transform for RealSense Camera -->
+    <!-- Adjust these values based on your actual camera setup -->
+    <!-- Example: Camera is 10 cm forward, 0 cm lateral, 20 cm up, no rotation -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_camera_link"
+          args="0.1 0 0.2 0 0 0 1 base_link camera_link" />
+</launch>
