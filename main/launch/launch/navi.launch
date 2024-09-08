@@ -1,0 +1,14 @@
+<launch>
+    <!-- Launch the map server -->
+    <node name="map_server" pkg="map_server" type="map_server" args="/home/charmander/map.yaml" />
+
+    <!-- Launch the urg_node for Lidar -->
+    <include file="$(find urg)/launch/urg_lidar.launch" />
+
+    <!-- Launch the AMCL node -->
+    <include file="$(find navigation)/launch/amcl.launch" />
+
+    <!-- Launch the move_base node -->
+    <include file="$(find navigation)/launch/move_base.launch" />
+</launch>
+

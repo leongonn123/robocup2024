@@ -1,0 +1,6 @@
+<launch>
+    <!-- Node for hand detection -->
+    <node name="obs_detector_node" pkg="obs_avoid" type="obs_detector.py" output="screen">
+        <!-- You can add any required parameters or remappings here -->
+    </node>
+</launch>

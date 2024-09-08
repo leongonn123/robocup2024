@@ -1,0 +1,16 @@
+<launch>
+    <!-- Node for hand detection -->
+    <node name="hand_detect_node" pkg="hand_detection" type="hand_detect.py" output="screen">
+        <!-- You can add any required parameters or remappings here -->
+    </node>
+
+    <!-- Node for Kinect interface -->
+    <node name="kinect_interface_node" pkg="hand_detection" type="kinect_inter.py" output="screen">
+        <!-- You can add any required parameters or remappings here -->
+    </node>
+
+    <!-- Node for movement control -->
+    <node name="move_bot_node" pkg="hand_detection" type="move_bot.py" output="screen">
+        <!-- You can add any required parameters or remappings here -->
+    </node>
+</launch>

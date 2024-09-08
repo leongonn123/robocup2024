@@ -1,0 +1,6 @@
+<launch>
+    <!-- Node for Kinect interface -->
+    <node name="arm_node" pkg="take_bag" type="arm.py" output="screen">
+        <!-- You can add any required parameters or remappings here -->
+    </node>>
+</launch>

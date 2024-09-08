@@ -1,0 +1,16 @@
+<launch>
+    <!-- Node for handling bag distance -->
+    <node name="bag_distance_node" pkg="take_bag" type="bag_dist.py" output="screen">
+        <!-- Optional: Add parameters or remappings if needed -->
+    </node>
+
+    <!-- Node for robot to bag interaction -->
+    <node name="robo_bag_node" pkg="take_bag" type="robo_bag.py" output="screen">
+        <!-- Optional: Add parameters or remappings if needed -->
+    </node>
+
+    <!-- Node for rotating towards the bag -->
+    <node name="rotate_node" pkg="take_bag" type="rotate.py" output="screen">
+        <!-- Optional: Add parameters or remappings if needed -->
+    </node>
+</launch>
